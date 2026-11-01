@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Holy Props — Props, ειδικές κατασκευές & χειροτεχνία</title>
+  <meta name="description" content="Holy Props: χειροποίητα props, ειδικές κατασκευές και είδη χειροτεχνίας.">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Mali:wght@700&family=Noto+Sans:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav wrap">
+      <a class="logo" href="index.html"><img src="img/logo-small.png" alt=""><span class="brand">H<span class="halo-o">o</span>ly Props</span></a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false">☰</button>
+      <ul>
+        <li><a href="index.html" aria-current="page" data-i18n="nav_home">Αρχική</a></li>
+        <li><a href="kataskeves.html" data-i18n="nav_work">Κατασκευές</a></li>
+        <li><a href="epikoinonia.html" data-i18n="nav_contact">Επικοινωνία</a></li>
+        <li><button class="lang" id="lang">EN</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <h1 data-i18n="hero_title">Props, ειδικές κατασκευές & χειροτεχνία</h1>
+          <p class="lead" data-i18n="hero_lead"></p>
+          <div class="actions">
+            <a class="btn" href="kataskeves.html" data-i18n="hero_cta">Δες τις κατασκευές</a>
+            <a class="btn ghost" href="epikoinonia.html" data-i18n="hero_cta2">Ζήτα προσφορά</a>
+          </div>
+        </div>
+        <img class="logo-big" src="img/logo.png" alt="Holy Props">
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <h2 data-i18n="cats_title">Τι φτιάχνουμε</h2>
+          <p data-i18n="cats_lead"></p>
+        </div>
+        <div class="cats">
+          <a class="cat" href="kataskeves.html"><div class="icon">🎭</div><h3 data-i18n="cat_props">Props</h3><p data-i18n="cat_props_t"></p></a>
+          <a class="cat" href="kataskeves.html"><div class="icon">🛠️</div><h3 data-i18n="cat_special"></h3><p data-i18n="cat_special_t"></p></a>
+          <a class="cat" href="kataskeves.html"><div class="icon">✂️</div><h3 data-i18n="cat_craft"></h3><p data-i18n="cat_craft_t"></p></a>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head"><h2 data-i18n="featured_title">Πρόσφατες κατασκευές</h2></div>
+        <div class="grid" id="grid" data-limit="3"></div>
+        <div class="actions" style="justify-content:center;margin-top:28px">
+          <a class="btn ghost" href="kataskeves.html" data-i18n="featured_more">Όλες οι κατασκευές</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="wrap">
+        <div>
+          <h2 data-i18n="about_title">Πώς δουλεύουμε</h2>
+          <ol>
+            <li data-i18n="about_1"></li>
+            <li data-i18n="about_2"></li>
+            <li data-i18n="about_3"></li>
+            <li data-i18n="about_4"></li>
+          </ol>
+        </div>
+        <div style="text-align:center">
+          <a class="btn" style="background:var(--cream);color:var(--maroon);border-color:var(--cream)" href="epikoinonia.html" data-i18n="about_cta">Ας μιλήσουμε</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <div class="box"><button class="close" aria-label="Close">×</button><div class="content"></div></div>
+  </div>
+
+  <footer>
+    <img src="img/logo-small.png" alt="">
+    <div><span class="brand">H<span class="halo-o">o</span>ly Props</span> · <span data-i18n="footer"></span></div>
+    <div><a href="mailto:info@holyprops.gr">info@holyprops.gr</a> · <a href="tel:+306934111334">+30 693 411 1334</a> · <a href="https://www.instagram.com/holyprops/" target="_blank" rel="noopener">Instagram</a></div>
+    <div>© 2026 · <span data-i18n="info_area_v">Αθήνα</span></div>
+  </footer>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
