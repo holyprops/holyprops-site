@@ -1,0 +1,44 @@
+media:
+  - name: work
+    label: Φωτογραφίες κατασκευών
+    input: img/work
+    output: /img/work
+    rename: safe
+    extensions: [jpg, jpeg, png, webp]
+
+content:
+  - name: projects
+    label: Κατασκευές
+    type: file
+    path: data/projects.json
+    format: json
+    list: true
+    fields:
+      - name: cat
+        label: Κατηγορία
+        type: select
+        options:
+          values:
+            - name: props
+              label: Props
+            - name: special
+              label: Ειδική κατασκευή
+            - name: craft
+              label: Χειροτεχνία
+      - name: title_el
+        label: Τίτλος (ελληνικά)
+        type: string
+      - name: title_en
+        label: Τίτλος (αγγλικά)
+        type: string
+      - name: text_el
+        label: Περιγραφή (ελληνικά)
+        type: text
+      - name: text_en
+        label: Περιγραφή (αγγλικά)
+        type: text
+      - name: img
+        label: Φωτογραφία
+        type: image
+        options:
+          media: work
