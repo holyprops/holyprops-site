@@ -1,0 +1,27 @@
+# Μικραίνει τις φωτογραφίες που ανεβαίνουν στο img/work (max 1600 px), για να φορτώνει γρήγορα το site.
+name: Μικραίνει φωτογραφίες
+on:
+  push:
+    paths: ["img/work/**"]
+permissions:
+  contents: write
+jobs:
+  resize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq imagemagick
+      - run: |
+          shopt -s nullglob nocaseglob
+          for f in img/work/*.{jpg,jpeg,png,webp}; do
+            # only big files, so already-small photos are not re-compressed every time
+            if [ "$(stat -c%s "$f")" -gt 700000 ]; then
+              mogrify -auto-orient -resize '1600x1600>' -strip -quality 82 "$f"
+              echo "resized $f"
+            fi
+          done
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add img/work
+          git diff --cached --quiet || (git commit -m "Μικρότερες φωτογραφίες" && git push)
