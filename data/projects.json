@@ -1,50 +1,45 @@
 [
   {
-    "cat": "props",
-    "title_el": "Μεσαιωνικό σπαθί για θεατρική παράσταση",
-    "title_en": "Medieval sword for a stage play",
-    "text_el": "Ελαφρύ σπαθί από ξύλο και αφρώδες υλικό, με παλαιωμένο φινίρισμα μετάλλου. Ασφαλές για χρήση επί σκηνής.",
-    "text_en": "Lightweight sword in wood and foam with an aged metal finish. Safe for use on stage.",
-    "img": ""
+    "cat": "special",
+    "title_el": "Book Nook ΜΙκρός Πριγκιπας",
+    "title_en": "Book Nook Litttle Prince",
+    "text_el": "Μια υπέροχη προσθήκη για την βιβλιοθηκη",
+    "text_en": "A wonderfull add on for your librady"
   },
   {
-    "cat": "props",
-    "title_el": "Θεατρική μάσκα",
-    "title_en": "Theatre mask",
-    "text_el": "Χειροποίητη μάσκα με εσωτερική επένδυση για άνεση, ζωγραφισμένη στο χέρι.",
+    "cat": "craft",
+    "title_el": "Ημερολόγιο Θυμού",
+    "title_en": "Unger Diary",
+    "text_el": "ενα χειροποίήτο ημερολόγιο θυμού απο ανακυκλωμένο χαρτί με χρυσοτυπία ,ιαπωνική βιβλιοδεσία, με εσωτερικά φύλλα χαρτιού που όταν γράψετε τα ανύποτα μπορείτε να το φυτέψετε και να ανθίσει.",
     "text_en": "Handmade mask with a padded lining for comfort, hand painted.",
-    "img": ""
+    "img": "/img/work/agyristo.jpg"
   },
   {
     "cat": "special",
     "title_el": "Ξύλινη ταμπέλα καταστήματος",
     "title_en": "Wooden shop sign",
     "text_el": "Ταμπέλα με χάραξη και κοπή λέιζερ, βαμμένη στα χρώματα του brand του πελάτη.",
-    "text_en": "Laser engraved and cut sign, painted in the client's brand colours.",
-    "img": ""
+    "text_en": "Laser engraved and cut sign, painted in the client's brand colours."
   },
   {
     "cat": "special",
     "title_el": "Βιτρίνα για εκδήλωση",
     "title_en": "Event display",
     "text_el": "Ειδική κατασκευή για παρουσίαση προϊόντων, σχεδιασμένη στις διαστάσεις του χώρου.",
-    "text_en": "Custom product display built to fit the venue.",
-    "img": ""
+    "text_en": "Custom product display built to fit the venue."
   },
   {
     "cat": "craft",
     "title_el": "Χειροποίητο κουτί δώρου",
     "title_en": "Handmade gift box",
     "text_el": "Κουτί από χαρτόνι βιβλιοδεσίας, ντυμένο με διακοσμητικό χαρτί, σε όποιο μέγεθος χρειάζεσαι.",
-    "text_en": "Box made from bookbinding board, covered in decorative paper, in any size you need.",
-    "img": ""
+    "text_en": "Box made from bookbinding board, covered in decorative paper, in any size you need."
   },
   {
     "cat": "craft",
     "title_el": "Ραμμένο σημειωματάριο",
     "title_en": "Hand-sewn notebook",
     "text_el": "Σημειωματάριο με παραδοσιακή ραφή βιβλιοδεσίας και εξώφυλλο της επιλογής σου.",
-    "text_en": "Notebook with traditional bookbinding stitching and a cover of your choice.",
-    "img": ""
+    "text_en": "Notebook with traditional bookbinding stitching and a cover of your choice."
   }
 ]
