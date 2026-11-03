@@ -1,0 +1,50 @@
+[
+  {
+    "cat": "props",
+    "title_el": "Μεσαιωνικό σπαθί για θεατρική παράσταση",
+    "title_en": "Medieval sword for a stage play",
+    "text_el": "Ελαφρύ σπαθί από ξύλο και αφρώδες υλικό, με παλαιωμένο φινίρισμα μετάλλου. Ασφαλές για χρήση επί σκηνής.",
+    "text_en": "Lightweight sword in wood and foam with an aged metal finish. Safe for use on stage.",
+    "img": ""
+  },
+  {
+    "cat": "props",
+    "title_el": "Θεατρική μάσκα",
+    "title_en": "Theatre mask",
+    "text_el": "Χειροποίητη μάσκα με εσωτερική επένδυση για άνεση, ζωγραφισμένη στο χέρι.",
+    "text_en": "Handmade mask with a padded lining for comfort, hand painted.",
+    "img": ""
+  },
+  {
+    "cat": "special",
+    "title_el": "Ξύλινη ταμπέλα καταστήματος",
+    "title_en": "Wooden shop sign",
+    "text_el": "Ταμπέλα με χάραξη και κοπή λέιζερ, βαμμένη στα χρώματα του brand του πελάτη.",
+    "text_en": "Laser engraved and cut sign, painted in the client's brand colours.",
+    "img": ""
+  },
+  {
+    "cat": "special",
+    "title_el": "Βιτρίνα για εκδήλωση",
+    "title_en": "Event display",
+    "text_el": "Ειδική κατασκευή για παρουσίαση προϊόντων, σχεδιασμένη στις διαστάσεις του χώρου.",
+    "text_en": "Custom product display built to fit the venue.",
+    "img": ""
+  },
+  {
+    "cat": "craft",
+    "title_el": "Χειροποίητο κουτί δώρου",
+    "title_en": "Handmade gift box",
+    "text_el": "Κουτί από χαρτόνι βιβλιοδεσίας, ντυμένο με διακοσμητικό χαρτί, σε όποιο μέγεθος χρειάζεσαι.",
+    "text_en": "Box made from bookbinding board, covered in decorative paper, in any size you need.",
+    "img": ""
+  },
+  {
+    "cat": "craft",
+    "title_el": "Ραμμένο σημειωματάριο",
+    "title_en": "Hand-sewn notebook",
+    "text_el": "Σημειωματάριο με παραδοσιακή ραφή βιβλιοδεσίας και εξώφυλλο της επιλογής σου.",
+    "text_en": "Notebook with traditional bookbinding stitching and a cover of your choice.",
+    "img": ""
+  }
+]

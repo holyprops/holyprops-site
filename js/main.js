@@ -68,22 +68,26 @@
 
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
 
+  // projects come from data/projects.json (edited with Pages CMS, see .pages.yml): title_el, title_en, text_el, text_en
+  var PROJECTS = [];
+  function pf(p, k) { return p[k + "_" + lang] || p[k + "_el"] || ""; }
+
   function media(p) {
-    if (p.img) return '<img src="' + esc(p.img) + '" alt="' + esc(p.title[lang]) + '" loading="lazy">';
+    if (p.img) return '<img src="' + esc(p.img) + '" alt="' + esc(pf(p, "title")) + '" loading="lazy">';
     return '<div class="ph"><div><span class="ico">' + ICON[p.cat] + '</span><span>' + t("photo_soon") + "</span></div></div>";
   }
 
   function card(p, i) {
     return '<button class="card" data-i="' + i + '" data-cat="' + p.cat + '">' + media(p) +
-      '<div class="body"><span class="tag">' + t(CAT_KEY[p.cat]) + "</span><h3>" + esc(p.title[lang]) + "</h3><p>" + esc(p.text[lang]) + "</p></div></button>";
+      '<div class="body"><span class="tag">' + t(CAT_KEY[p.cat]) + "</span><h3>" + esc(pf(p, "title")) + "</h3><p>" + esc(pf(p, "text")) + "</p></div></button>";
   }
 
   var filter = "all";
   function renderGrid() {
     var g = document.getElementById("grid");
-    if (!g || !window.PROJECTS) return;
+    if (!g) return;
     var limit = Number(g.getAttribute("data-limit")) || 0, html = "", n = 0;
-    window.PROJECTS.forEach(function (p, i) {
+    PROJECTS.forEach(function (p, i) {
       if (filter !== "all" && p.cat !== filter) return;
       if (limit && n >= limit) return;
       html += card(p, i); n++;
@@ -101,6 +105,12 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     apply();
+    if (document.getElementById("grid")) {
+      fetch("data/projects.json", { cache: "no-cache" })
+        .then(function (r) { return r.json(); })
+        .then(function (list) { PROJECTS = list || []; renderGrid(); })
+        .catch(function () {});
+    }
 
     var lb = document.getElementById("lang");
     if (lb) lb.addEventListener("click", function () {
@@ -126,9 +136,9 @@
     if (g && modal) {
       g.addEventListener("click", function (e) {
         var c = e.target.closest(".card"); if (!c) return;
-        var p = window.PROJECTS[Number(c.getAttribute("data-i"))];
+        var p = PROJECTS[Number(c.getAttribute("data-i"))];
         modal.querySelector(".content").innerHTML = media(p) +
-          '<div class="body"><span class="tag">' + t(CAT_KEY[p.cat]) + "</span><h2>" + esc(p.title[lang]) + "</h2><p>" + esc(p.text[lang]) + "</p></div>";
+          '<div class="body"><span class="tag">' + t(CAT_KEY[p.cat]) + "</span><h2>" + esc(pf(p, "title")) + "</h2><p>" + esc(pf(p, "text")) + "</p></div>";
         modal.classList.add("open");
       });
       modal.addEventListener("click", function (e) { if (e.target === modal || e.target.closest(".close")) modal.classList.remove("open"); });
