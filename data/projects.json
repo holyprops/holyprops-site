@@ -3,8 +3,8 @@
     "cat": "special",
     "title_el": "Book Nook Μικρός Πρίγκιπας",
     "title_en": "Book Nook Little Prince",
-    "text_el": "Μια υπέροχη προσθήκη για την βιβλιοθηκη",
-    "text_en": "A wonderful addition to your library",
+    "text_el": "Ο Μικρός Πρίγκιπας στον αστεροειδή του, με το τριαντάφυλλο και την αλεπού, κάτω από έναν ουρανό με αστέρια που φωτίζουν. Είναι εκτυπωμένο σε 3D εκτυπωτή και ζωγραφισμένο στο χέρι με ακρυλικά χρώματα. Τα φωτάκια LED μέσα στα αστέρια δίνουν απαλό φως, ιδανικό για τη βιβλιοθήκη ή για φωτάκι νυκτός σε παιδικό δωμάτιο. Ένα δώρο για όσους ξέρουν ότι «τα ουσιώδη είναι αόρατα για τα μάτια».",
+    "text_en": "The Little Prince on his asteroid, with his rose and the fox, beneath a sky of glowing stars. It is 3D printed and hand-painted with acrylics. The LED lights inside the stars give a soft glow, perfect for a bookshelf or as a night light in a child’s room. A gift for anyone who knows that “what is essential is invisible to the eye”",
     "img": "/img/work/mikros-prigkipas.jpg"
   },
   {
@@ -25,10 +25,11 @@
   },
   {
     "cat": "special",
-    "title_el": "Βιτρίνα για εκδήλωση",
-    "title_en": "Event display",
-    "text_el": "Ειδική κατασκευή για παρουσίαση προϊόντων, σχεδιασμένη στις διαστάσεις του χώρου.",
-    "text_en": "Custom product display built to fit the venue."
+    "title_el": "Book Nook «Βυθός»",
+    "title_en": "Under the Sea Book Nook",
+    "text_el": "Ένα κομμάτι βυθού ανάμεσα στα βιβλία σου: κοράλλια σε όλα τα χρώματα, φύκια που λικνίζονται, μια μέδουσα κι ένα ρυάκι που κυλά προς τον βυθό. Είναι εκτυπωμένο σε 3D εκτυπωτή και ζωγραφισμένο στο χέρι με ακρυλικά χρώματα. Ο φωτισμός LED ελέγχεται από το κινητό σου μέσω WLED: διαλέγεις χρώματα, φωτεινότητα και εφέ, για να έχεις κάθε βράδυ διαφορετικό βυθό.συνδέεται και με έξυπνο σπίτι",
+    "text_en": "A piece of the deep sea between your books: corals in every colour, swaying seaweed, a jellyfish and a stream flowing into the deep. It is 3D printed and hand-painted with acrylics. The LED lighting is controlled from your phone with WLED: choose colours, brightness and effects, so the sea looks different every night.",
+    "img": "/img/work/booknook-vythos.jpg"
   },
   {
     "cat": "craft",
