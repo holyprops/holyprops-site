@@ -17,10 +17,11 @@
   },
   {
     "cat": "special",
-    "title_el": "Ξύλινη ταμπέλα καταστήματος",
-    "title_en": "Wooden shop sign",
-    "text_el": "Ταμπέλα με χάραξη και κοπή λέιζερ, βαμμένη στα χρώματα του brand του πελάτη.",
-    "text_en": "Laser engraved and cut sign, painted in the client's brand colours."
+    "title_el": "Book Nook «Ο Κλόουν»",
+    "title_en": "Clown Book Nook",
+    "text_el": "Ένα book nook για τους λάτρεις του τρόμου: ανάμεσα στα βιβλία σου κρυφοκοιτάζει ένας κλόουν με κόκκινα μαλλιά και κίτρινα μάτια. Είναι εκτυπωμένο σε 3D εκτυπωτή και ζωγραφισμένο στο χέρι με ακρυλικά χρώματα, οπότε κάθε κομμάτι είναι μοναδικό.",
+    "text_en": "A book nook for horror lovers: a red-haired, yellow-eyed clown peeks out from between your books. It is 3D printed and hand-painted with acrylics, so every piece is one of a kind.",
+    "img": "/img/work/booknook-klooun.jpg"
   },
   {
     "cat": "special",
