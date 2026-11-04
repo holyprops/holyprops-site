@@ -91,7 +91,12 @@ section { padding-block: 64px; }
 .card {
   background: var(--paper); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);
   cursor: pointer; transition: transform .2s; text-align: left; border: 0; padding: 0; font: inherit; color: inherit;
+  /* a card is a <button>, which centres its content vertically: stack from the top so every photo lines up */
+  display: flex; flex-direction: column; justify-content: flex-start;
 }
+/* same-size cards: long titles and texts are cut short here, the full text shows when the card is opened */
+.card h3 { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
+.card p { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 5; line-clamp: 5; overflow: hidden; }
 .card:hover { transform: translateY(-4px); }
 .card .body { padding: 18px 20px 22px; }
 .card .tag { display: inline-block; font-size: .78rem; font-weight: 700; color: var(--olive); background: var(--cream); border-radius: 999px; padding: 2px 10px; margin-bottom: 8px; }
